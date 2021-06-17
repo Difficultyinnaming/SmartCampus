@@ -14,5 +14,6 @@ public interface DynamicDao {
     int modifyStatus(Integer id);
     //修改点赞数
     int modifyNum(Integer num, Integer id);
-    int queryGreatNUm(Integer id);
+    Long queryGreatNUm(Integer id);
+    int changeCommentCountById(Integer count,Integer id);
 }

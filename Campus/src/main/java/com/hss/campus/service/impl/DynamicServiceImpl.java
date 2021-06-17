@@ -45,7 +45,12 @@ public class DynamicServiceImpl implements DynamicService {
     }
 
     @Override
-    public int queryGreatNUm(Integer id) {
+    public Long queryGreatNUm(Integer id) {
         return dynamicDao.queryGreatNUm(id);
+    }
+
+    @Override
+    public boolean changeCommentCountById(Integer count, Integer id) {
+        return dynamicDao.changeCommentCountById(count, id)!=-1;
     }
 }

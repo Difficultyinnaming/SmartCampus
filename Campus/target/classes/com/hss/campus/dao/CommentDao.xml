@@ -11,7 +11,9 @@
     <select id="queryAll" resultType="Comment">
         select id,s_id as sId,content,time from comment where dynamic_id=#{arg0} and state=#{arg1} order by time desc
     </select>
-
+    <select id="queryOne" resultType="Comment">
+        select id,s_id as sId,content,time,dynamic_id as dynamicId from comment where id=#{id}
+    </select>
     <update id="modifyState">
         update comment set state=1 where id=#{id}
     </update>

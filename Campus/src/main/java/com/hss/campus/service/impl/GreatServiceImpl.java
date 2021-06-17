@@ -6,6 +6,8 @@ import com.hss.campus.service.dynamic.GreatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class GreatServiceImpl implements GreatService {
 
@@ -25,5 +27,10 @@ public class GreatServiceImpl implements GreatService {
     @Override
     public int addRecording(Great great) {
         return greatDao.addRecording(great);
+    }
+
+    @Override
+    public List<Great> queryGreatRecord(Integer studentId) {
+        return greatDao.queryGreatRecord(studentId);
     }
 }

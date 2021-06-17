@@ -8,6 +8,15 @@ public class Great {
     private String name;
     private String avatar;
 
+    public Great() {
+    }
+
+    public Great(Integer dynamicId, Integer sId, String time) {
+        this.dynamicId = dynamicId;
+        this.sId = sId;
+        this.time = time;
+    }
+
     public boolean isRealNull(){
 
         return dynamicId==0 || sId==0 || time.equals("");

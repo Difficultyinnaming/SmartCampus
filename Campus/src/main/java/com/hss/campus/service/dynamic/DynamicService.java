@@ -12,5 +12,6 @@ public interface DynamicService {
     int modifyStatus(Integer id);
     int modifyNum(Integer num, Integer id);
 
-    int queryGreatNUm(Integer id);
+    Long queryGreatNUm(Integer id);
+    boolean changeCommentCountById(Integer count,Integer id);
 }

@@ -10,15 +10,15 @@
     </insert>
 
     <select id="queryAll" resultType="Dynamic">
-        select id,mark,content,time from dynamic where s_id=#{arg0} and status=#{arg1}
+        select id,mark,content,time,great_num as greatNum , comment_num as commentNum from dynamic where s_id=#{arg0} and status=#{arg1}
     </select>
     <select id="queryEveryone" resultType="Dynamic">
-        SELECT id,mark,content,time,s_id as sId from dynamic where status=#{status} order by time desc
+        SELECT id,mark,content,time,s_id as sId from dynamic,great_num as greatNum where status=#{status} order by time desc
     </select>
     <select id="queryDynamic" resultType="Dynamic">
-        select id,mark,content,time,great_num as greatNum from dynamic where id=#{id}
+        select id,mark,content,time,great_num as greatNum , comment_num as commentNum from dynamic where id=#{id}
     </select>
-    <select id="queryGreatNUm" resultType="int">
+    <select id="queryGreatNUm" resultType="Long">
         SELECT great_num FROM dynamic where id=#{id}
     </select>
 
@@ -26,6 +26,9 @@
         UPDATE dynamic set status=1 where id=#{id}
     </update>
     <update id="modifyNum">
-        UPDATE dynamic set great_Num=#{arg0} where id=#{arg1}
+        UPDATE dynamic set great_num=#{arg0} where id=#{arg1}
+    </update>
+    <update id="changeCommentCountById">
+        UPDATE dynamic set comment_num=#{arg0} where id=#{arg1}
     </update>
 </mapper>

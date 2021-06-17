@@ -6,6 +6,8 @@ public enum ResultCode {
     USER_LOGIN_ERROR(202,"账号不存在或密码错误"),
     USER_AVATAR_ERROR(400,"上传头像失败"),
     USER_TEXT_ERROR(404,"上传文件失败"),
+    UNLIKE_STATUS(101,"unlike"),
+    LIKE_STATUS(102,"like"),
     USER_PARAMETER_ERROR(404,"参数错误");
     private final Integer code;
     private final String status;

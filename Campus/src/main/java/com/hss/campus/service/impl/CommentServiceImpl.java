@@ -28,4 +28,9 @@ public class CommentServiceImpl implements CommentService {
     public int modifyState(Integer id) {
         return commentDao.modifyState(id);
     }
+
+    @Override
+    public Comment queryOne(Integer id) {
+        return commentDao.queryOne(id);
+    }
 }

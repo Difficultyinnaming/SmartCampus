@@ -5,143 +5,36 @@
       <artifact name="Campus:war exploded" />
     </artifacts-to-build>
   </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="0516413a-e02c-4332-9411-2e124e8f397c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Campus_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Campus_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2_1_b03.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/Campus.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/AdministratorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/AnnouncementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/DeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/DynamicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/GreatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/RepairController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/RepairRecordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/RepairWorkerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/UnitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/AdministratorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/AdministratorDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/AnnouncementDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/AnnouncementDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/CommentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/CommentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DeviceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DeviceDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DynamicDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DynamicDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/GreatDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/GreatDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/ImagesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/ImagesDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairImagesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairImagesDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairRecordDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairRecordDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairWorkerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/RepairWorkerDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/StudentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/UnitDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/UnitDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Dynamic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Great.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/Repair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/RepairArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/RepairImages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/RepairNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/RepairProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/RepairRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/RepairWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/repair/Unit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/user/Administrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/user/Announcement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/user/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/util/DayRepairNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/util/ImageHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/util/ImageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/AnnouncementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/DeviceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/UnitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/DynamicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/GreatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/ImagesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/AdministratorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/AnnouncementServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/DeviceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/DynamicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/GreatServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/ImagesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/RepairImagesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/RepairRecordServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/RepairServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/RepairWorkerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/UnitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/repair/RepairImagesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/repair/RepairRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/repair/RepairService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/repair/RepairWorkerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/user/AdministratorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/user/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/MultipleFileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/OtherUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/resources/conf/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/resources/conf/dispatcherServlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/resources/conf/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Campus/src/main/resources/conf/mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/GreatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/controller/GreatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/CommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/CommentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/CommentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DynamicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DynamicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DynamicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/DynamicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/GreatDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/GreatDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/GreatDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/dao/GreatDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Dynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Dynamic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Great.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/entity/dynamic/Great.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/DynamicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/DynamicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/GreatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/dynamic/GreatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/DynamicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/DynamicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/GreatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/service/impl/GreatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/java/com/hss/campus/util/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/src/main/resources/conf/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/src/main/resources/conf/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/WEB-INF/classes/com/hss/campus/dao/DynamicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/WEB-INF/classes/com/hss/campus/dao/DynamicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/WEB-INF/classes/com/hss/campus/dao/GreatDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/WEB-INF/classes/com/hss/campus/dao/GreatDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/WEB-INF/classes/conf/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/Campus-1.0-SNAPSHOT/WEB-INF/classes/conf/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/classes/com/hss/campus/dao/DynamicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/classes/com/hss/campus/dao/DynamicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/classes/com/hss/campus/dao/GreatDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/classes/com/hss/campus/dao/GreatDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Campus/target/classes/conf/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/target/classes/conf/jdbc.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +79,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Campus/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -196,7 +89,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -205,9 +98,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.301" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.301" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Campus_war_exploded/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="Campus:war exploded">
           <settings>
@@ -294,7 +186,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0516413a-e02c-4332-9411-2e124e8f397c" name="Default Changelist" comment="" />
@@ -308,7 +200,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -321,6 +213,72 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623918989934">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1623918989934" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1623932632388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1623932632388" />
+    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1623933338187">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623933338187" />
+    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1623933338187">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623933338187" />
+    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1623933338187">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623933338187" />
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.1.center" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.1.left" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.1.right" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.2.bottom" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.2.center" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.2.left" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state width="1493" height="253" key="GridCell.Tab.2.right" timestamp="1623933338188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1623933338188" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1623933291482">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1623933291482" />
+    <state x="507" y="116" width="651" height="594" key="find.popup" timestamp="1623933007876">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="507" y="116" width="651" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1623933007876" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

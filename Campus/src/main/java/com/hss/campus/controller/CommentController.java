@@ -2,8 +2,10 @@ package com.hss.campus.controller;
 
 import com.google.gson.Gson;
 import com.hss.campus.entity.dynamic.Comment;
+import com.hss.campus.entity.dynamic.Dynamic;
 import com.hss.campus.entity.user.Student;
 import com.hss.campus.service.dynamic.CommentService;
+import com.hss.campus.service.dynamic.DynamicService;
 import com.hss.campus.service.user.StudentService;
 import com.hss.campus.util.OtherUtil;
 import com.hss.campus.util.Response;
@@ -26,17 +28,25 @@ public class CommentController {
     private CommentService commentService;
     @Autowired
     private StudentService service;
+    @Autowired
+    private DynamicService dynamicService;
 
     //发表评论
     @RequestMapping(value = "/addComment.do",method = RequestMethod.POST,produces={"application/json;","text/html;charset=UTF-8;"})
     @ResponseBody
     public String insertComment(@RequestBody Comment comment){
         Response<Comment> response=new Response<>();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        String strTime = sdf.format(new Date(System.currentTimeMillis()));
-        comment.setTime(strTime);
+        Integer dynamicId = comment.getDynamicId();
+        Dynamic dynamic = dynamicService.queryDynamic(dynamicId);
+        comment.setTime(OtherUtil.getNowTime("yyyy-MM-dd HH:mm"));
         comment.setState(OtherUtil.UPLOAD_MULTIPLE_PICTURES[0]);
         if (commentService.addComment(comment) != -1){
+            if (dynamic.getCommentNum()!=null){
+                dynamicService.changeCommentCountById(dynamic.getCommentNum()+1, dynamicId);
+            }else {
+                dynamicService.changeCommentCountById(1, dynamicId);
+            }
+
             response.setStatus(ResultCode.SUCCESS.status());
             response.setCode(ResultCode.SUCCESS.code());
         }else {
@@ -72,8 +82,12 @@ public class CommentController {
     @RequestMapping(value = "/modifyComment.do",method = RequestMethod.POST,produces={"application/json;","text/html;charset=UTF-8;"})
     @ResponseBody
     public String modifyComment(Integer id) {
+        Comment comment = commentService.queryOne(id);
+        Integer dynamicId = comment.getDynamicId();
+        Dynamic dynamic = dynamicService.queryDynamic(dynamicId);
+        boolean change = dynamicService.changeCommentCountById(dynamic.getCommentNum() - 1, dynamicId);
         Response<Object> response = new Response<>();
-        if (commentService.modifyState(id) != -1){
+        if (commentService.modifyState(id) != -1&&change){
             response.setCode(ResultCode.SUCCESS.code());
             response.setStatus(ResultCode.SUCCESS.status());
         }else {

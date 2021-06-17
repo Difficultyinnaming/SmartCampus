@@ -13,6 +13,16 @@ public class Dynamic {
     private String name;
     private String avatar;
     private Integer greatNum;
+    private Integer commentNum;
+
+    public Integer getCommentNum() {
+        return commentNum;
+    }
+
+    public void setCommentNum(Integer commentNum) {
+        this.commentNum = commentNum;
+    }
+
 
     public Integer getGreatNum() {
         return greatNum;
@@ -107,6 +117,7 @@ public class Dynamic {
                 ", name='" + name + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", greatNum=" + greatNum +
+                ", commentNum=" + commentNum +
                 '}';
     }
 }
