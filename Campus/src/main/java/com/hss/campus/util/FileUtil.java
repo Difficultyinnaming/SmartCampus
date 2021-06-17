@@ -43,8 +43,8 @@ public class FileUtil {
             String prefix=filename.substring(filename.lastIndexOf(".")+1);
             String fileName = "" + new Date().getTime() +"."+ prefix;
             imageHeader.setFileName(fileName);
-            File files=new File("D:\\Study\\Campus\\Image\\"+path,fileName);
-            //File files=new File("C:\\apache-tomcat-9.0.45-windows-x64\\apache-tomcat-9.0.45\\webapps\\image\\"+path,fileName);
+            //File files=new File("D:\\Study\\Campus\\Image\\"+path,fileName);
+            File files=new File("C:\\apache-tomcat-9.0.45-windows-x64\\apache-tomcat-9.0.45\\webapps\\image\\"+path,fileName);
             file.transferTo(files);
         }
         //item.write(new File("C:\\apache-tomcat-9.0.45-windows-x64\\apache-tomcat-9.0.45\\webapps\\image\\"+path+newFileName));
