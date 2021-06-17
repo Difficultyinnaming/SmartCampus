@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.RepairDao">
+    <select id="queryArea" resultType="RepairArea">
+        select id,smallArea,bigArea from repairarea
+    </select>
+    <select id="queryProject" resultType="RepairProject">
+        select id,smallProject,bigProject from repairproject
+    </select>
+    <select id="queryList" resultType="Repair">
+        select id,repairarea,repairproject,phone,date,time,content,mark,s_id,schedule,
+               appraise,address,worker,description,device_id from repair order by date desc
+    </select>
+    <select id="query" resultType="Repair">
+        SELECT * from repair WHERE id=#{id}
+    </select>
+    <select id="queryByStuId" resultType="Repair">
+        SELECT * from repair where s_id=#{id}
+    </select>
+    <select id="queryByStuSchedule" resultType="Repair">
+        SELECT * from repair where s_id=#{id}
+    </select>
+    <select id="queryByAdminSchedule" resultType="Repair">
+        SELECT * from repair where schedule=#{schedule}
+    </select>
+    <!--多表查询开始-->
+    <select id="queryId" resultType="String">
+        select worker from repair WHERE id=#{id}
+    </select>
+    <select id="queryWorker" resultType="RepairWorker">
+        select id,name,phone,email,status,unit from repairworker WHERE name=#{name}
+    </select>
+
+    <select id="queryUnit" resultType="int">
+        select unit from repairworker where name=#{name}
+    </select>
+    <select id="getUnitNameByRepairId" resultType="String">
+        select name from repair_uint where unit_id=#{id}
+    </select>
+    <!--多表查询结束-->
+
+    <select id="queryRepairNumToday" resultType="Long">
+        select count(*) from repair where date=#{data}
+    </select>
+    <select id="queryRepairNumAll" resultType="Long">
+        select count(*) from repair
+    </select>
+    <select id="queryRepairListByArea" resultType="Repair">
+        select * from repair where repairarea like "%" #{repairarea} order by date desc
+    </select>
+    <select id="queryBeforeWeek" resultType="Long">
+        select count(*) from repair where date=#{date}
+    </select>
+    <select id="getRepairListByToday" resultType="Repair">
+        select * from repair where date=#{date}
+    </select>
+    <select id="getRepairNum" resultType="Long">
+        select count(*) from repair where repairarea=#{arg0} and schedule=#{arg1}
+    </select>
+    <select id="getRepairOtherNum" resultType="Long">
+        select count(*) from repair where repairarea=#{param1} and schedule in (param2,param3,param4)
+    </select>
+
+    <insert id="add">
+        insert into repair (s_id,repairArea,repairProject,phone,date,time,content,address,schedule)
+        values (#{s_id},#{repairArea},#{repairProject},#{phone},#{date},#{time},#{content},#{address},#{schedule})
+    </insert>
+    <insert id="addByCode">
+        INSERT INTO repair (s_id,repairArea,repairProject,phone,date,time,content,mark,schedule,address,worker,device_id)
+        VALUES
+        (#{s_id},#{repairArea},#{repairProject},#{phone},#{date},#{time},#{content},#{mark},#{schedule},#{address},#{worker},#{deviceId})
+    </insert>
+
+    <update id="updateStatus">
+        UPDATE repair SET schedule=#{arg0} WHERE id=#{arg1}
+    </update>
+    <update id="sendWorker">
+        UPDATE repair SET worker=#{arg0} WHERE id=#{arg1}
+    </update>
+    <update id="appraiseRepair">
+        UPDATE repair SET schedule=#{arg0},appraise=#{arg1},description=#{arg2} WHERE id=#{arg3}
+    </update>
+</mapper>

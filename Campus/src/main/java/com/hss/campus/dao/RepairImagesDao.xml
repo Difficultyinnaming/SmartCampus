@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.RepairImagesDao">
+
+    <insert id="add">
+        insert into repair_images(url,mark) values(#{arg0},#{arg1})
+    </insert>
+
+    <select id="queryUrl" resultType="Images">
+        select id,url from repair_images where mark=#{mark};
+    </select>
+</mapper>

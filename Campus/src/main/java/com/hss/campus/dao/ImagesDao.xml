@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.ImagesDao">
+
+    <insert id="add">
+        insert into images(url,mark) values(#{arg0},#{arg1})
+    </insert>
+
+    <select id="queryUrl" resultType="Images">
+        SELECT id,url from images where mark=#{mark};
+    </select>
+
+    <update id="modifyStatus">
+        UPDATE images SET status=1 WHERE status=0;
+    </update>
+</mapper>

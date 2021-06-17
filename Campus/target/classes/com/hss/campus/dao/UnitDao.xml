@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.UnitDao">
+    <select id="getAllUnit" resultType="Unit">
+        select unit_id id,name, finished_num finishedNum from repair_uint
+    </select>
+    <select id="queryUnitFinishNum" resultType="Integer">
+        select finished_num from repair_uint where name=#{name}
+    </select>
+
+    <update id="UpdateFinished">
+        UPDATE repair_uint SET finished_num=finished_num+1 WHERE name=#{name}
+    </update>
+</mapper>

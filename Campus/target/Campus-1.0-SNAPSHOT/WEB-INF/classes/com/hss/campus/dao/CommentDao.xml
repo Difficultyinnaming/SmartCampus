@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.CommentDao">
+    <insert id="addComment">
+        insert into comment(dynamic_id,s_id,content,state,time)
+        values(#{dynamicId},#{sId},#{content},#{state},#{time})
+    </insert>
+
+    <select id="queryAll" resultType="Comment">
+        select id,s_id as sId,content,time from comment where dynamic_id=#{arg0} and state=#{arg1} order by time desc
+    </select>
+
+    <update id="modifyState">
+        update comment set state=1 where id=#{id}
+    </update>
+</mapper>

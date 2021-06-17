@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.RepairWorkerDao">
+    <select id="queryAll" resultType="RepairWorker">
+        SELECT id,name,phone,email,unit typeWork,status,unit FROM repairworker
+    </select>
+
+    <select id="queryTypeWorker" resultType="RepairWorker">
+        SELECT id,name,phone,email,unit ,status FROM repairworker where unit=#{unit}
+    </select>
+    <select id="queryOne" resultType="RepairWorker">
+        SELECT status FROM repairworker where status=#{status}
+    </select>
+
+    <insert id="insert">
+        insert into repairworker (name,phone,email,status,unit) values (#{name},#{phone},#{email},#{status},#{unit})
+    </insert>
+
+    <update id="update">
+        update repairworker set phone=#{phone},unit=#{unit} where id=#{id}
+    </update>
+    <update id="updateWorkerStatus">
+        UPDATE repairworker SET status=#{arg0}  WHERE name=#{arg1} and phone=#{arg2}
+    </update>
+
+    <delete id="delete">
+        delete from repairworker where id=#{id}
+    </delete>
+
+</mapper>

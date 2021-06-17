@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.RepairRecordDao">
+    <select id="querySimpleRecord" resultType="RepairRecord">
+        select name,time,status,repair_id as repairId,phone from repairrecord where repair_id=#{id}
+    </select>
+
+    <insert id="insertRecord">
+        INSERT INTO repairrecord (name,time,status,repair_id,phone) VALUES (#{param1},#{param2},#{param3},#{param4},#{param5})
+    </insert>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.GreatDao">
+    <select id="queryGreat" resultType="Great">
+        SELECT id,dynamic_id,s_id,time from great where dynamic_id=#{param1} and s_id=#{param2}
+    </select>
+
+    <insert id="addRecording">
+        insert into great(dynamic_id,s_id,time) values(#{dynamicId},#{sId},#{time})
+    </insert>
+
+    <delete id="deleteRecording">
+        delete from great where id=#{id}
+    </delete>
+</mapper>

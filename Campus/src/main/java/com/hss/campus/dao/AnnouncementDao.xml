@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.AnnouncementDao">
+
+    <insert id="add">
+        insert into announcement(a_id,author,title,content,image,time)
+        values(#{a_id},#{author},#{title},#{content},#{image},#{time})
+    </insert>
+
+    <select id="queryAdministrator" resultType="Announcement">
+        select a_id,author,title,content,image,time,id from announcement where a_id=#{id}
+    </select>
+    <select id="queryStudent" resultType="Announcement">
+        select a_id,author,title,content,image,time,id from announcement order by time desc limit 0,5
+    </select>
+</mapper>

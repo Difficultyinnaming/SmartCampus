@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--    <settings>-->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+<!--    </settings>-->
+
+
+    <typeAliases>
+        <!--name:实体类所在包名(不是实体类包名也可以)-->
+        <package name="com.hss.campus.entity.dynamic"/>
+        <package name="com.hss.campus.entity.repair"/>
+        <package name="com.hss.campus.entity.user"/>
+        <package name="com.hss.campus.entity.util"/>
+    </typeAliases>
+    <mappers>
+        <!--name:包名,包中所有的mapper.xml一次都能加载
+            使用package的要求：
+                1.mapper文件名称和dao接口名称完全一样，包括大小写
+                2.mapper文件和dao接口必须在同一目录下
+        -->
+<!--        <package name="com.hss.campus.dao.user"/>-->
+<!--        <package name="com.hss.campus.dao.dynamic"/>-->
+<!--        <package name="com.hss.campus.dao.repair"/>-->
+        <package name="com.hss.campus.dao" />
+    </mappers>
+</configuration>

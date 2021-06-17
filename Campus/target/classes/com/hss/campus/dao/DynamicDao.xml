@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.DynamicDao">
+
+    <insert id="add">
+        insert into dynamic(content,mark,s_id,status,time)
+        values(#{content},#{mark},#{sId},#{status},#{time})
+    </insert>
+
+    <select id="queryAll" resultType="Dynamic">
+        select id,mark,content,time from dynamic where s_id=#{arg0} and status=#{arg1}
+    </select>
+    <select id="queryEveryone" resultType="Dynamic">
+        SELECT id,mark,content,time,s_id as sId from dynamic where status=#{status} order by time desc
+    </select>
+    <select id="queryDynamic" resultType="Dynamic">
+        select id,mark,content,time,great_num as greatNum from dynamic where id=#{id}
+    </select>
+    <select id="queryGreatNUm" resultType="int">
+        SELECT great_num FROM dynamic where id=#{id}
+    </select>
+
+    <update id="modifyStatus">
+        UPDATE dynamic set status=1 where id=#{id}
+    </update>
+    <update id="modifyNum">
+        UPDATE dynamic set great_Num=#{arg0} where id=#{arg1}
+    </update>
+</mapper>

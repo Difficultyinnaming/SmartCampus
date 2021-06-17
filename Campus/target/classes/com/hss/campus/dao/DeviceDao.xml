@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.campus.dao.DeviceDao">
+    <insert id="add">
+        INSERT INTO repair_device (area,project,worker,address,code_url)
+        VALUES  (#{area},#{project},#{worker},#{address},#{codeUrl})
+    </insert>
+
+    <delete id="deleteById">
+        delete from repair_device where id=#{id}
+    </delete>
+
+    <select id="queryAll" resultType="Device">
+        select id,area,project,address,worker,code_url as codeUrl from repair_device
+    </select>
+
+    <update id="modify">
+        UPDATE repair_device SET area=#{area},project=#{project},worker=#{worker},address=#{address} ,code_url=#{codeUrl} WHERE id=#{id}
+    </update>
+</mapper>
