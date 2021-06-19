@@ -138,5 +138,36 @@ public class DynamicController {
         }
         return new Gson().toJson(response);
     }
+    //删除动态
+    @RequestMapping(value = "/querySimpleOneDynamic.do",method = RequestMethod.POST,produces={"application/json;","text/html;charset=UTF-8;"})
+    @ResponseBody
+    public String querySimpleOneDynamic(Integer dynamicId) {
+        Response<Dynamic> response = new Response<>();
+        if (dynamicId!=null){
+            Dynamic dynamic = dynamicService.queryDynamic(dynamicId);
+            if (dynamic!=null){
+                Student student = service.queryNameAvatar(dynamic.getsId());
+                dynamic.setAvatar(OtherUtil.IP_ADDRESS+student.getAvatar());
+                dynamic.setName(student.getName());
+                List<Images> imagesList = imagesService.queryUrl(dynamic.getMark());
+                for (int i = 0; i < imagesList.size(); i++) {
+                    Images images = imagesList.get(i);
+                    images.setUrl(OtherUtil.IP_ADDRESS+images.getUrl());
+                    imagesList.set(i,images);
+                }
+                dynamic.setImagesList(imagesList);
+                response.setCode(ResultCode.SUCCESS.code());
+                response.setStatus(ResultCode.SUCCESS.status());
+                response.setData(dynamic);
+            }else {
+                response.setCode(ResultCode.USER_TEXT_ERROR.code());
+                response.setStatus(ResultCode.USER_TEXT_ERROR.status());
+            }
+        }else {
+            response.setCode(ResultCode.USER_TEXT_ERROR.code());
+            response.setStatus(ResultCode.USER_TEXT_ERROR.status());
+        }
+        return new Gson().toJson(response);
+    }
 
 }
